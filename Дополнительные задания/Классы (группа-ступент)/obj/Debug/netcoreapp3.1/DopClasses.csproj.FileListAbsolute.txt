@@ -1,0 +1,16 @@
+C:\Users\Антон\source\repos\DopClasses\bin\Debug\netcoreapp3.1\DopClasses.exe
+C:\Users\Антон\source\repos\DopClasses\bin\Debug\netcoreapp3.1\DopClasses.deps.json
+C:\Users\Антон\source\repos\DopClasses\bin\Debug\netcoreapp3.1\DopClasses.runtimeconfig.json
+C:\Users\Антон\source\repos\DopClasses\bin\Debug\netcoreapp3.1\DopClasses.runtimeconfig.dev.json
+C:\Users\Антон\source\repos\DopClasses\bin\Debug\netcoreapp3.1\DopClasses.dll
+C:\Users\Антон\source\repos\DopClasses\bin\Debug\netcoreapp3.1\DopClasses.pdb
+C:\Users\Антон\source\repos\DopClasses\obj\Debug\netcoreapp3.1\DopClasses.csprojAssemblyReference.cache
+C:\Users\Антон\source\repos\DopClasses\obj\Debug\netcoreapp3.1\DopClasses.AssemblyInfoInputs.cache
+C:\Users\Антон\source\repos\DopClasses\obj\Debug\netcoreapp3.1\DopClasses.AssemblyInfo.cs
+C:\Users\Антон\source\repos\DopClasses\obj\Debug\netcoreapp3.1\DopClasses.csproj.CoreCompileInputs.cache
+C:\Users\Антон\source\repos\DopClasses\obj\Debug\netcoreapp3.1\DopClasses.dll
+C:\Users\Антон\source\repos\DopClasses\obj\Debug\netcoreapp3.1\DopClasses.pdb
+C:\Users\Антон\source\repos\DopClasses\obj\Debug\netcoreapp3.1\DopClasses.genruntimeconfig.cache
+C:\Users\Антон\source\repos\DopClasses\bin\Debug\netcoreapp3.1\MyLibraryCore.dll
+C:\Users\Антон\source\repos\DopClasses\bin\Debug\netcoreapp3.1\MyLibraryCore.pdb
+C:\Users\Антон\source\repos\DopClasses\obj\Debug\netcoreapp3.1\DopClasses.csproj.CopyComplete
