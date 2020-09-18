@@ -1,0 +1,9 @@
+C:\Users\Антон\source\repos\MyLibraryCore\bin\Debug\netcoreapp3.1\MyLibraryCore.deps.json
+C:\Users\Антон\source\repos\MyLibraryCore\bin\Debug\netcoreapp3.1\MyLibraryCore.dll
+C:\Users\Антон\source\repos\MyLibraryCore\bin\Debug\netcoreapp3.1\MyLibraryCore.pdb
+C:\Users\Антон\source\repos\MyLibraryCore\obj\Debug\netcoreapp3.1\MyLibraryCore.csprojAssemblyReference.cache
+C:\Users\Антон\source\repos\MyLibraryCore\obj\Debug\netcoreapp3.1\MyLibraryCore.AssemblyInfoInputs.cache
+C:\Users\Антон\source\repos\MyLibraryCore\obj\Debug\netcoreapp3.1\MyLibraryCore.AssemblyInfo.cs
+C:\Users\Антон\source\repos\MyLibraryCore\obj\Debug\netcoreapp3.1\MyLibraryCore.csproj.CoreCompileInputs.cache
+C:\Users\Антон\source\repos\MyLibraryCore\obj\Debug\netcoreapp3.1\MyLibraryCore.dll
+C:\Users\Антон\source\repos\MyLibraryCore\obj\Debug\netcoreapp3.1\MyLibraryCore.pdb
