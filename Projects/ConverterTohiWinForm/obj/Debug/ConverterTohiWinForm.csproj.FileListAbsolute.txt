@@ -1,0 +1,10 @@
+C:\Users\Антон\source\repos\ConverterTohiWinForm\bin\Debug\ConverterTohiWinForm.exe.config
+C:\Users\Антон\source\repos\ConverterTohiWinForm\bin\Debug\ConverterTohiWinForm.exe
+C:\Users\Антон\source\repos\ConverterTohiWinForm\bin\Debug\ConverterTohiWinForm.pdb
+C:\Users\Антон\source\repos\ConverterTohiWinForm\obj\Debug\ConverterTohiWinForm.csprojAssemblyReference.cache
+C:\Users\Антон\source\repos\ConverterTohiWinForm\obj\Debug\ConverterTohiWinForm.Form1.resources
+C:\Users\Антон\source\repos\ConverterTohiWinForm\obj\Debug\ConverterTohiWinForm.Properties.Resources.resources
+C:\Users\Антон\source\repos\ConverterTohiWinForm\obj\Debug\ConverterTohiWinForm.csproj.GenerateResource.cache
+C:\Users\Антон\source\repos\ConverterTohiWinForm\obj\Debug\ConverterTohiWinForm.csproj.CoreCompileInputs.cache
+C:\Users\Антон\source\repos\ConverterTohiWinForm\obj\Debug\ConverterTohiWinForm.exe
+C:\Users\Антон\source\repos\ConverterTohiWinForm\obj\Debug\ConverterTohiWinForm.pdb
