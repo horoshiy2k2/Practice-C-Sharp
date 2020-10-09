@@ -2,16 +2,11 @@
 
 namespace Z1
 {
-    interface IFigure // internal по умолчанию
+    interface IFigure
     {
         double Volume { get; set; }
-        string Name { get; set; } // = "string123" // не могут быть инициализированы свойства
-        //private const int b = 10; - c версии C# 8.0 можно так, объявлять статические переменные
-        //void SetVolume(); // метод интерфейса
-        void SetVolume()
-        {
-            Console.WriteLine("Базовая функция SetVoume"); // но можно инициализировать методы ??? Ясно, с версии 8.0
-        }
+        string Name { get; set; }
+        void SetVolume();
     }
 
 
@@ -135,8 +130,8 @@ namespace Z1
                         throw new Exception(); // никогда сюда не должно прийти - заглушка, надо ли такое писать?
                 }
             }
-
-            //проверка правильности. Проверяем тип текущей фигуры и считаем "вручную", выводим результаты ручных подсчётов и подсчётов функцией экземпляра
+ 
+            //Проверяем тип текущей фигуры и считаем "вручную", выводим результаты ручных подсчётов и подсчётов функцией экземпляра
             for (int i = 0; i < arrIFigures.Length; i++)
             {
                 var currentIFigure = arrIFigures[i];
