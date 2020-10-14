@@ -6,25 +6,29 @@ namespace HW2_SocialNetwork.Realizations
 {
     class VK : ISocialNetworkProvider // :SocialNetworkBase
     {
-        private Dictionary<User, FriendBase> _users = new Dictionary<User, FriendBase>(); // Dictionary(User, FriendCollection)
-        private Dictionary<User, FriendBase> _LoggedUsers = new Dictionary<User, FriendBase>(); // Dictionary
+        private Dictionary<User, List<FriendBase>> _users = new Dictionary<User, List<FriendBase>>(); // Dictionary(User, FriendCollection)
+        private Dictionary<User, List<FriendBase>> _LoggedUsers = new Dictionary<User, List<FriendBase>>();
 
-        public void AddFriend(User user, FriendBase friend)
+        public void AddFriend(string email, string password, FriendBase friend) // для каждого свой можно сделать, а можно заморочиться с основным
         {
-            if (_LoggedUsers.ContainsKey(user)) // проверить, как определяет, есть ли ключ
+            var user = GetUserByEmailAndPassword(email, password);
+            if (_LoggedUsers.ContainsKey(user.Key))
             {
                 if (friend is FriendVK)
                 {
-                    _users.Add(user, friend); //в коллекцию с этим пользователем добавляем нового друга
-                    _LoggedUsers.Add(user, friend);
+                   //добавить друга в список в словаре
+                    _users[user.Key].Add(friend);
+                    _LoggedUsers[user.Key].Add(friend);
+
+                    Console.WriteLine($"У {user.Key.Email} новый друг: {friend}");
                 }
                 else if (friend is FriendFB)
                 {
-                    Console.WriteLine("Невозвможно добавить друга из FB пользователю VK ");
+                    Console.WriteLine($"Невозвможно добавить друга из FB ({friend}) пользователю VK ({user.Key.Email})");
                 }
                 else if (friend is FriendIG)
                 {
-                    Console.WriteLine("Невозвможно добавить друга из IG пользователю VK ");
+                    Console.WriteLine($"Невозвможно добавить друга из IG ({friend}) пользователю VK ({user.Key.Email})");
                 }
             }
             else {
@@ -37,7 +41,7 @@ namespace HW2_SocialNetwork.Realizations
         {
             var user = GetUserByEmailAndPassword(email, password);
 
-            if (user.Key != null) // структуру KeyValuePair<T,T> нельзя просто так сравнить с null
+            if (user.Key != null) 
             {
                 if (_LoggedUsers.ContainsKey(user.Key))
                 {
@@ -62,15 +66,15 @@ namespace HW2_SocialNetwork.Realizations
                 if (_LoggedUsers.ContainsKey(user.Key))
                 {
                     _LoggedUsers.Remove(user.Key); // проверить, как удаляет null. удаляет какую-то дичь чекнуть, как правильно сделать 2:2
-                    Console.WriteLine($"Пользователь {email} вышел из аккаунта");
+                    Console.WriteLine($"Пользователь {email} вышел из аккаунта\n\n");
                 } else
                 {
-                    Console.WriteLine("Пользователь не был авторизован");
+                    Console.WriteLine("Пользователь не был авторизован\n\n");
                 }
                 
             } else
             {
-                Console.WriteLine("Неверно введён адрес почты или пароль для выхода из аккаунта");
+                Console.WriteLine("Неверно введён адрес почты или пароль для выхода из аккаунта\n\n");
             }
             
         }
@@ -83,19 +87,31 @@ namespace HW2_SocialNetwork.Realizations
             }
             else
             {
-                _users.Add(user, null); // у пользователья нет друзей :(
+                _users.Add(user, new List<FriendBase>()); // важно: выделяем место на список, а не null
             }
         }
 
         public void ShowUsers()
         {
+            Console.WriteLine("Все зарегистрированные пользователи: ");
             foreach (var user in _users)
             {
-                Console.WriteLine(user.Key.Email); // вывести с друзьями - переопределить метод ToString у друзей в базовом
+                Console.WriteLine($"Пользователь {user.Key.Email}");
+
+                if(user.Value.Count != 0)
+                {
+                    Console.WriteLine("Друзья:");
+                    foreach (var friend in user.Value)
+                    {
+                        Console.WriteLine(friend);
+                    }
+                }
+                Console.WriteLine();
             }
+            Console.WriteLine();
         }
 
-        private KeyValuePair<User, FriendBase> GetUserByEmailAndPassword(string email, string password)
+        private KeyValuePair<User, List<FriendBase>> GetUserByEmailAndPassword(string email, string password)
         {
             foreach (var user in _users)
             {
@@ -104,7 +120,7 @@ namespace HW2_SocialNetwork.Realizations
                     return user;
                 }
             }
-            return new KeyValuePair<User, FriendBase>(); // вместо null
+            return new KeyValuePair<User, List<FriendBase>>(); // вместо null
         }
     }
 }

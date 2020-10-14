@@ -8,6 +8,7 @@ namespace HW2_SocialNetwork
     {
         static void Main(string[] args)
         {
+           
             var vk = new VK();
             var countUsers = 10;
             var users = GetRandomUsers(countUsers); // метод для генерации юзеров
@@ -16,25 +17,31 @@ namespace HW2_SocialNetwork
 
             vk.ShowUsers();
 
-            vk.Login("email1", "password1"); // вошёл в акк
-            vk.Login("email1", "password1"); // уже вошёл
-            vk.Login("asd", "sda"); // неверно
-            Console.WriteLine();
+            // в отдельный метод по добавлению случайных друзей списку друзей
+            foreach (var user in users)
+            {
+                vk.Login(user.Email, user.Password);
+                Console.WriteLine();
 
-            vk.Logout("email1", "password1"); // вышел из акка
-            vk.Logout("email1", "password1"); // уже вышел из акка
-            vk.Logout("213", "awe"); // неверно
-            Console.WriteLine();
+                var r = new Random();
+                var countFriends = r.Next(0, 5);
+                var friends = GetRandomFriends(countFriends);
 
-            vk.Login("email1", "password1"); // вошёл
-            vk.Login("email1", "password1"); // уже вошёл
-            Console.WriteLine();
 
-            vk.AddFriend("email1", "password1", new FriendBase())
+                foreach (var friend in friends)
+                {
+                    vk.AddFriend(user.Email, user.Password, friend);
+                }
+
+                Console.WriteLine();
+                vk.Logout(user.Email, user.Password);
+            }
+            
+
 
         }
-        
-        static List<User> GetRandomUsers(int countUsers)// А надо ли? Может просто работать с VK ?
+
+        static List<User> GetRandomUsers(int countUsers)// А надо ли? Может просто работать с VK ? // List<T>
         {
             var users = new List<User>();
             for (int i = 0; i < countUsers; i++)
@@ -42,6 +49,33 @@ namespace HW2_SocialNetwork
                 users.Add(new User() { Email = "email" + i, Password = "password" + i });
             }
             return users;
+        }
+
+        static List<FriendBase> GetRandomFriends(int countFriends)
+        {
+            var r = new Random(); // глобально объявить бы...
+
+            var friends = new List<FriendBase>();
+
+            for (int i = 0; i < countFriends; i++)
+            {
+                switch (r.Next(0, 3)) // 0 1 2
+                {
+                    case 0:
+                        friends.Add(new FriendVK() { Name = "Name" + i }); // инициализатор заполнить везде
+                        break;
+                    case 1:
+                        friends.Add(new FriendFB() { Name = "Name" + i });
+                        break;
+                    case 2:
+                        friends.Add(new FriendIG() { Name = "Name" + i });
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            return friends;
         }
 
         static void AddUsersInSocialNetwork(List<User> users, ISocialNetworkProvider socialNetwork)// А надо ли? Может просто работать с VK ?

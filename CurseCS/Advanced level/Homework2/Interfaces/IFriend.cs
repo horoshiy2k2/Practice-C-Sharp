@@ -6,7 +6,7 @@ namespace HW2_SocialNetwork
 {
     interface IFriend
     {
-        //User как-то задействован
+        //User как-то задействован - нет
         //Что-то общее для всех друзей, не важно откуда они
     }
 }

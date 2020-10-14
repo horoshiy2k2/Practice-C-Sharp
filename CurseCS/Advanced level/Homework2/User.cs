@@ -9,6 +9,9 @@ namespace HW2_SocialNetwork
         public string Email { get; set; } // можно метод для проверки емейла
         public string Password { get; set; } // можно задать минимальную длину пароля
         //можно продумать доп. свойства, завязку с ними, енам, id, структуру
+        //количество друзей
+        //ToString переопределить
+        //Name добавить
     }
 }
 
