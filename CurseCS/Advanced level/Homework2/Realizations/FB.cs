@@ -4,7 +4,8 @@ using System.Text;
 
 namespace HW2_SocialNetwork.Realizations
 {
-    class FB
+    class FB : SocialNetworkBase, ISocialNetworkProvider
     {
+        // особенности FB
     }
 }

@@ -4,14 +4,18 @@ using System.Text;
 
 namespace HW2_SocialNetwork.Realizations
 {
-    abstract class FriendBase : IFriend //:user//?
+    abstract class FriendBase : IFriend
     {
-        //Дата регистрации в вк или вообще, Количество общих друзей
-        public string Name{ get; set; }
+        public string Name { get; set; }
 
         public override string ToString()
         {
             return $"{Name}";
+        }
+
+        public FriendBase ()
+        {
+            Name = ((Names)new Random().Next(0, 11)).ToString();
         }
     }
 }

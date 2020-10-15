@@ -6,5 +6,6 @@ namespace HW2_SocialNetwork.Realizations
 {
     class FriendFB : FriendBase, IFriend
     {
+        // особенности друзей в FB
     }
 }

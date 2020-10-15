@@ -6,6 +6,6 @@ namespace HW2_SocialNetwork.Realizations
 {
     class FriendVK : FriendBase, IFriend
     {
-
+        // особенности друзей в VK
     }
 }

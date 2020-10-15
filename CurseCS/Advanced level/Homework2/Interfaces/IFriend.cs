@@ -6,9 +6,10 @@ namespace HW2_SocialNetwork
 {
     interface IFriend
     {
-        //User как-то задействован - нет
+        string Name { get; set; }
         //Что-то общее для всех друзей, не важно откуда они
     }
 }
+
 //3.Создать интерфейс IFriend(базовы) и конкретные интерфейсы, и
 //реализации для трех соц. сетей Vk и Facebook, и Instagram.
