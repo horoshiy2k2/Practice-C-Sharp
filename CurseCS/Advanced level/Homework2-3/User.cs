@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HW2_SocialNetwork.Realizations;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -62,9 +63,9 @@ namespace HW2_SocialNetwork
             return $"{Email}";
         }
 
-        public void DisplayMessage(string s)
+        public void DisplayMessage(object obj, AccountEventArgs e)
         {
-            Console.WriteLine($"{Email}: {s}");
+            Console.WriteLine($"{Email}: {e.Message}");
         }
     }
 }

@@ -1,9 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace HW2_SocialNetwork.Realizations
 {
+    delegate void AccountHandler(object sender, AccountEventArgs e);
+
+    internal class AccountEventArgs : EventArgs
+    {
+        public DateTime Date { get; set; }
+        public string Message { get; set; }
+    }
+
     abstract class SocialNetworkBase : ISocialNetworkProvider 
     {
         private Dictionary<User, List<IFriend>> _users = new Dictionary<User, List<IFriend>>(); 
@@ -150,7 +159,7 @@ namespace HW2_SocialNetwork.Realizations
             }
         }
 
-        delegate void AccountHandler(string message);
+        
         event AccountHandler Notify;
         
         //$"Социальная сеть {GetType().Name} упала в {DateTime.Now}"
@@ -161,7 +170,11 @@ namespace HW2_SocialNetwork.Realizations
                 Logout(user.Email, user.Password);
             }
 
-            Notify?.Invoke($"Система {GetType().Name} упала в {DateTime.Now} из-за этого вы были вылогинены из системы");
+            Notify?.Invoke(this, new AccountEventArgs()
+            {
+                Date = DateTime.Now,
+                Message = $"Система {GetType().Name} упала в {DateTime.Now} из-за этого вы были вылогинены из системы",
+            });
         }
 
         public void LoginAllUsers()
@@ -173,7 +186,6 @@ namespace HW2_SocialNetwork.Realizations
                 Login(user.Email, user.Password);
             }
         }
-
 
         public void SubscribeUsers()
         {
@@ -190,7 +202,6 @@ namespace HW2_SocialNetwork.Realizations
                 Notify -= user.DisplayMessage;
             }
         }
-
 
     }
 }
