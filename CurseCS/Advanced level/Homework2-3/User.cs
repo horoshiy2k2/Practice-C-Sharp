@@ -10,7 +10,6 @@ namespace HW2_SocialNetwork
         mail,
         yandex,
         yahoo
-
     }
 
     enum Names
@@ -44,7 +43,7 @@ namespace HW2_SocialNetwork
             Name = ((Names)r.Next(0, 11)).ToString();
             Email = GenerateEmail();
             Password = GeneratePassword();
-            Age = 18;
+            Age = r.Next(13, 60);
             Id++;
         }
 
@@ -61,6 +60,11 @@ namespace HW2_SocialNetwork
         public override string ToString()
         {
             return $"{Email}";
+        }
+
+        public void DisplayMessage(string s)
+        {
+            Console.WriteLine($"{Email}: {s}");
         }
     }
 }

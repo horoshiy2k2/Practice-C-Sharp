@@ -4,8 +4,8 @@ using System.Text;
 
 namespace HW2_SocialNetwork.Realizations
 {
-    class FriendIG : FriendBase, IFriend
+    class IG : SocialNetworkBase
     {
-        // особенности друзей в IG
+        // особенности IG
     }
 }

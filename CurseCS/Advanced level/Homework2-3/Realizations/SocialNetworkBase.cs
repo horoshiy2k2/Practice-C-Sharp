@@ -6,10 +6,10 @@ namespace HW2_SocialNetwork.Realizations
 {
     abstract class SocialNetworkBase : ISocialNetworkProvider 
     {
-        private Dictionary<User, List<FriendBase>> _users = new Dictionary<User, List<FriendBase>>(); 
-        private Dictionary<User, List<FriendBase>> _LoggedUsers = new Dictionary<User, List<FriendBase>>(); 
+        private Dictionary<User, List<IFriend>> _users = new Dictionary<User, List<IFriend>>(); 
+        private Dictionary<User, List<IFriend>> _LoggedUsers = new Dictionary<User, List<IFriend>>(); 
 
-        public void AddFriend(string email, string password, FriendBase friend)
+        public void AddFriend(string email, string password, IFriend friend)
         {
             SwitchColorConsole();
 
@@ -91,7 +91,9 @@ namespace HW2_SocialNetwork.Realizations
             }
             else
             {
-                _users.Add(user, new List<FriendBase>()); // важно: выделяем место на список, а не null
+                _users.Add(user, new List<IFriend>());
+                Notify += user.DisplayMessage;
+
             }
         }
 
@@ -119,7 +121,7 @@ namespace HW2_SocialNetwork.Realizations
             Console.WriteLine();
         }
 
-        private KeyValuePair<User, List<FriendBase>> GetUserByEmailAndPassword(string email, string password)
+        private KeyValuePair<User, List<IFriend>> GetUserByEmailAndPassword(string email, string password)
         {
             foreach (var user in _users)
             {
@@ -129,7 +131,7 @@ namespace HW2_SocialNetwork.Realizations
                 }
             }
 
-            return new KeyValuePair<User, List<FriendBase>>(); 
+            return new KeyValuePair<User, List<IFriend>>(); 
         }
 
         private void SwitchColorConsole()
@@ -147,6 +149,49 @@ namespace HW2_SocialNetwork.Realizations
                 Console.ForegroundColor = ConsoleColor.Green;
             }
         }
+
+        delegate void AccountHandler(string message);
+        event AccountHandler Notify;
+        
+        //$"Социальная сеть {GetType().Name} упала в {DateTime.Now}"
+        public void CrashSystem()
+        {
+            foreach (var user in _LoggedUsers.Keys)
+            {
+                Logout(user.Email, user.Password);
+            }
+
+            Notify?.Invoke($"Система {GetType().Name} упала в {DateTime.Now} из-за этого вы были вылогинены из системы");
+        }
+
+        public void LoginAllUsers()
+        {
+            SwitchColorConsole();
+
+            foreach (var user in _LoggedUsers.Keys)
+            {
+                Login(user.Email, user.Password);
+            }
+        }
+
+
+        public void SubscribeUsers()
+        {
+            foreach (var user in _users.Keys)
+            {
+                Notify += user.DisplayMessage; // если уже был подписан, то подпишет во второй раз
+            }
+        }
+
+        public void UnsubscribeUsers()
+        {
+            foreach (var user in _users.Keys)
+            {
+                Notify -= user.DisplayMessage;
+            }
+        }
+
+
     }
 }
 
@@ -159,3 +204,8 @@ namespace HW2_SocialNetwork.Realizations
 //да – добавляем ему в коллекцию друзей нового. Если пытаемся
 //добавить пользователя не того типа – пишем на консоль не могу
 //добавить пользователя Facebook в Instagram.
+
+//7.Когда вызывается метод CrashSystem удаляются все пользователи из
+//коллекции залогиненных пользователей и им всем отправляется
+//сообщение, что система упала в «текущее время» из-за этого вы были
+//вылогинены из системы

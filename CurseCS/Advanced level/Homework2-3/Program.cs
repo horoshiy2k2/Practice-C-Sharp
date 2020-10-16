@@ -1,6 +1,7 @@
 ﻿using HW2_SocialNetwork.Realizations;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace HW2_SocialNetwork
 {
@@ -35,6 +36,22 @@ namespace HW2_SocialNetwork
             ig.ShowUsers();
             fb.ShowUsers();
 
+            vk.LoginAllUsers();
+            vk.CrashSystem();
+            Thread.Sleep(1000);
+
+            fb.LoginAllUsers();
+            fb.CrashSystem();
+            Thread.Sleep(1000);
+
+            ig.LoginAllUsers();
+            ig.CrashSystem();
+            Thread.Sleep(1000);
+
+            vk.UnsubscribeUsers();
+            vk.CrashSystem(); // событие произошло, но все отписаны = никто о нём не узнает
+            vk.SubscribeUsers();
+
             Console.ForegroundColor = ConsoleColor.White;
         }
 
@@ -49,9 +66,9 @@ namespace HW2_SocialNetwork
             return users;
         }
 
-        static List<FriendBase> GetRandomFriends(int countFriends)
+        static List<IFriend> GetRandomFriends(int countFriends)
         {
-            var friends = new List<FriendBase>();
+            var friends = new List<IFriend>();
 
             for (int i = 0; i < countFriends; i++)
             {

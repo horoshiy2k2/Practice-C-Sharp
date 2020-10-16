@@ -4,8 +4,9 @@ using System.Text;
 
 namespace HW2_SocialNetwork.Realizations
 {
-    class IG : SocialNetworkBase, ISocialNetworkProvider
+    class VK : SocialNetworkBase
     {
-        // особенности IG
+        // особенности VK
     }
 }
+

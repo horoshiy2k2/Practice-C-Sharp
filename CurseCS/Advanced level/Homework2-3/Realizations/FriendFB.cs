@@ -4,7 +4,7 @@ using System.Text;
 
 namespace HW2_SocialNetwork.Realizations
 {
-    class FriendFB : FriendBase, IFriend
+    class FriendFB : FriendBase
     {
         // особенности друзей в FB
     }

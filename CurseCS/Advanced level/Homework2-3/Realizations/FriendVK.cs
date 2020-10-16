@@ -4,8 +4,8 @@ using System.Text;
 
 namespace HW2_SocialNetwork.Realizations
 {
-    class FB : SocialNetworkBase, ISocialNetworkProvider
+    class FriendVK : FriendBase
     {
-        // особенности FB
+        // особенности друзей в VK
     }
 }

@@ -9,9 +9,9 @@ namespace HW2_SocialNetwork
     {
         void Login(string email, string password);
         void Logout(string email, string password);
-        void AddFriend(string email, string password, FriendBase friend);
+        void AddFriend(string email, string password, IFriend friend);
         void AddUser(User user);
-
+        void CrashSystem();
     }
 }
 
