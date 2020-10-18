@@ -1,0 +1,12 @@
+﻿Kolya	961402	4	7	9	b
+Vanya	912399	5	7	9	p
+Igor	912399	6	7	9	p
+Ilya	963101	7	5	4	b
+Vasya	961402	9	7	9	b
+Vlad	912399	8	7	9	p
+Vadim	912399	10	7	9	p
+Platon	963101	4	5	4	b
+Sasha	961402	5	7	9	b
+Masha	912399	6	7	9	p
+Dasha	912399	6	7	9	p
+Anton	963101	4	5	4	b
