@@ -6,6 +6,7 @@ namespace Life
 {
     abstract class BasePerson : IPerson
     {
+        public static Random r = new Random();
 
         public string Name { get; set; }
         public int Age { get; set; }
