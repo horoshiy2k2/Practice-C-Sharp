@@ -10,7 +10,7 @@ namespace Life
 
         public string Name { get; set; }
         public int Age { get; set; }
-        public int Cash { get; set; }
+        public double Cash { get; set; }
 
         protected BasePerson(string name, int age, int cash)
         {

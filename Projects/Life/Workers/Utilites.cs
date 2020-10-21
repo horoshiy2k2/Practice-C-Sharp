@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Life.Realisations
+namespace Life
 {
-    class Client //: BasePerson
+    class Utilites
     {
-        
     }
 }

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Life.Realisations
+namespace Life.Implementations
 {
     abstract class BaseWorker : BasePerson, IWorker
     {
@@ -14,7 +14,24 @@ namespace Life.Realisations
             SoftSkill = softSkill;
         }
 
-        public double Skill { get; set; } // можно словарь с разными технологиями и интом
+        private double _skill;
+
+        public double Skill
+        {
+            get { return _skill; }
+            set { 
+                if (value > 100)
+                {
+                    _skill = 100;
+                }
+                else
+                {
+                    _skill = value;
+                }
+
+            }
+        }
+
         public double SoftSkill { get; set; } // просто харизма от 0 до 100
         
         public override string ToString()

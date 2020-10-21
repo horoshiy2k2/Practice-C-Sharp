@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Life.Realisations
+namespace Life.Implementations
 {
     enum Positions
     {

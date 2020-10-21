@@ -1,5 +1,5 @@
 ﻿using Life.Interfaces;
-using Life.Realisations;
+using Life.Implementations;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -15,10 +15,15 @@ namespace Life
 
     class Program
     {
-        static Random r = new Random();
+        // В ЦВЕТА РАЗУКРАСИТЬ
+        public static readonly Random r = new Random();
+        public static int day = 0;
 
         static void Main(string[] args)
         {
+           
+
+            // генерация рабочих
             int countStateWorker = r.Next(1, 5);
             int countFreelanceWorker = r.Next(1, 5);
             CreateWorker createFW = CreateFreelanceWorker;
@@ -27,34 +32,25 @@ namespace Life
             var freelanceWorkers = GenerateWorkers(countFreelanceWorker, createFW);
             var stateWorkers = GenerateWorkers(countStateWorker, createSW);
 
-            Console.WriteLine("Фрилансеры");
-            foreach (var worker in freelanceWorkers)
-            {
-                Console.WriteLine(worker);
-            }
-
-            Console.WriteLine("\nШтатные сотрудники");
-            foreach (var worker in stateWorkers)
-            {
-                Console.WriteLine(worker);
-            }
-
+            ShowWorkers(freelanceWorkers);
+            ShowWorkers(stateWorkers); 
 
             //Работа
             Console.WriteLine("\n\nОСТОРОЖНО, РАБОТА ФРИЛАНСЕРОВ");
-            //Просто 1 цикл = 1 день
+            
 
-            var day = 0;
+             //Просто 1 цикл = 1 день
             var flru = new FreelancePlatform();
-
+            Action newDay = NewDay;
             //генератор случайный задач? У них должно быть имя?
 
             while (true)
             {
-                day++;
+                newDay();
+                
                 //СОбытие нового дня - пипец. Рассылка для всех тасков. Они обрабатывают, какой день сейчас и делают что-либо. Переговоры с наймитами
 
-                var countTasks = r.Next(0, 5);
+                var countTasks = r.Next(0, 2);
                 flru.AddRandomTasks(countTasks);
 
                 //работа фрилансеров
@@ -68,9 +64,28 @@ namespace Life
                 Console.WriteLine();
                 //Работа КОМПАНИИ В ЦЕЛОМ, а не штатных по отдельности
 
-                Thread.Sleep(2500);
+                Thread.Sleep(500);
             }
 
+        }
+
+
+        static void ShowWorkers(List<IWorker> workers)
+        {
+            Console.WriteLine(workers[0].GetType().Name);
+            foreach (var worker in workers)
+            {
+                Console.WriteLine(worker);
+            }
+        }
+
+        static void NewDay()
+        {
+            day++;
+            Console.ForegroundColor = (ConsoleColor)r.Next(1, 15);
+            
+
+            Console.WriteLine($"Day {day}");
         }
 
         static List<IWorker> GenerateWorkers(int count, CreateWorker createWorker)

@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Life;
 
-namespace Life.Realisations
+namespace Life
 {
     enum Technologies
     {
-        Web,
+        WebDev,
         SoftwarePC,
-        SofwareMobile,
+        SofwareMob,
         GameDevPC,
-        GameDevMobile
+        GameDevMob
     }
 
     enum ComplexityLevels
@@ -32,6 +33,8 @@ namespace Life.Realisations
         public int DaysToComplete { get; set; }
         public int DayStarted { get; set; } // &&
         public int DayEnded{ get; set; } // &&
+        public int LateFor { get; private set; }
+        public int DaysLeft { get; set; } // &&
         public string Name { get; set; }
         public ComplexityLevels Complexity { get; set; }
         public bool IsDone { get; private set; }
@@ -42,12 +45,14 @@ namespace Life.Realisations
         public double Completed
         {
             get { return _completed; }
-            set { 
-                
+            set {
+                DaysLeft = DaysToComplete - (Program.day - DayStarted);
                 _completed = value; 
                 if (_completed >= 100 && IsDone == false)
                 {
                     IsDone = true;
+                    DayEnded = Program.day;
+                    LateFor = (DayEnded - DayStarted) - DaysToComplete;
                 }
             }
         }
@@ -66,9 +71,13 @@ namespace Life.Realisations
             _id = CountTasks;
             Name = ((Technologies)r.Next(0, 5)).ToString() + CountTasks;
             IsDone = false;
+            
             Complexity = (ComplexityLevels)r.Next(0, 3);
             DaysToComplete = (int)Complexity * 5 + r.Next(1, 5);
             Cost = (int)Complexity * 250 + DaysToComplete * 50; // можно надбавку за скорость замутить фрилансеру)) А если просрочит, тогда резать ЗП
+            
+            
+            DaysLeft = DaysToComplete;
         }
         //0.05 % что заказчику надоест ждать
         //DateTime/TimeSpan DeadLine 
@@ -81,7 +90,7 @@ namespace Life.Realisations
 
         public override string ToString()
         {
-            return $"{CountTasks}) {Name}:\tCost:{Cost}\t{Complexity}\t{DaysToComplete} days\t";
+            return $"{CountTasks}) {Name}:\tCost: {Cost}$ {Complexity} {DaysToComplete} days";
         }
 
     }
