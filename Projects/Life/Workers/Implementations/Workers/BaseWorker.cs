@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Life.Implementations
 {
+    [Serializable]
     abstract class BaseWorker : BasePerson, IWorker
     {
         
@@ -12,6 +13,11 @@ namespace Life.Implementations
         {
             Skill = skill;
             SoftSkill = softSkill;
+        }
+
+        public BaseWorker()
+        {
+
         }
 
         private double _skill;

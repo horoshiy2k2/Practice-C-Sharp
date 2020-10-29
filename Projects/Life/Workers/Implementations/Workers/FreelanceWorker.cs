@@ -4,14 +4,23 @@ using System.Text;
 
 namespace Life.Implementations
 {
+    [Serializable]
     class FreelanceWorker : BaseWorker
     {
-        public int Reputation { get; set; } 
+        public int Reputation { get; set; }
+        // количество выполненных тасков разной сложности
+        public FreelanceWorker()
+        {
+
+        }
 
         public FreelanceWorker(string name, int age, int cash, int skill, int softSkill) : base(name, age, cash, skill, softSkill)
         {
             Reputation = 0; // по-другому сделать? // от репы зависит, захочет ли заказчик работать с ним
         }
+
+        
+
         public override string ToString()
         {
             return base.ToString() + $"\t{Reputation} rep";

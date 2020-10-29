@@ -3,6 +3,9 @@ using Life.Implementations;
 using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.IO;
+using System.Reflection.PortableExecutable;
+using System.Xml.Serialization;
 
 namespace Life
 {
@@ -46,9 +49,9 @@ namespace Life
 
             while (true)
             {
-                newDay();
+                newDay(); // к этому событию присобачить работу всех работников, чтобы форычом не прогонять.
                 
-                //СОбытие нового дня - пипец. Рассылка для всех тасков. Они обрабатывают, какой день сейчас и делают что-либо. Переговоры с наймитами
+                //СОбытие нового дня. Рассылка для всех тасков. Они обрабатывают, какой день сейчас и делают что-либо. Переговоры с наймитами
 
                 var countTasks = r.Next(0, 2);
                 flru.AddRandomTasks(countTasks);
@@ -57,19 +60,50 @@ namespace Life
                 //Какие-то фрилансеры оказываются проворнее и лучше, забирают все таски. Это из-за того, что количество дней на решение не приписано ещё.
                 foreach (var worker in freelanceWorkers)
                 {
-                    
                     worker.Work(flru.tasks); // запись о том, хватило ли ему тасков или сидит без дела
                 }
+
+                SaveWorkers(freelanceWorkers);
+                SerializeXML(freelanceWorkers);
 
                 Console.WriteLine();
                 //Работа КОМПАНИИ В ЦЕЛОМ, а не штатных по отдельности
 
-                Thread.Sleep(500);
+                // Сохранение в файл 10го, 20го и тд. дня.
+                
+
+                Thread.Sleep(100);
             }
 
         }
 
 
+        static void SaveWorkers(List<IWorker> workers)
+        {
+            if (day % 10 == 0)
+            {
+                var nameFile = "SavedDays.txt";
+                var path = Path.Combine(Directory.GetCurrentDirectory(), nameFile);
+
+                if (day == 10)
+                {
+                    FileInfo file = new FileInfo(path);
+                    file.Delete();
+                }
+
+                using (StreamWriter sw = new StreamWriter(path, true))
+                {
+                    sw.WriteLine($"Day {day}");
+
+                    foreach (var worker in workers)
+                    {
+                        sw.WriteLine(worker);
+                    }
+
+                    sw.WriteLine();
+                }
+            }
+        }
         static void ShowWorkers(List<IWorker> workers)
         {
             Console.WriteLine(workers[0].GetType().Name);
@@ -110,6 +144,20 @@ namespace Life
             return new StateWorker(((Names)r.Next(0, 12)).ToString(), r.Next(18, 50), r.Next(0, 15) * 1000, r.Next(0, 101), r.Next(0, 101));
         }
 
+        //static void SerializeXML(List<IWorker> workers)
+        //{
+        //    XmlSerializer xml = new XmlSerializer(typeof(FreelanceWorker));
+
+        //    using (FileStream fs = new FileStream("Workers.xml", FileMode.OpenOrCreate))
+        //    {
+        //        foreach (var worker in workers)
+        //        {
+        //            xml.Serialize(fs, worker);
+        //        }
+        //    }
+
+        //}
+
     }
 }
 
@@ -129,3 +177,7 @@ namespace Life
 
 //Делать мини-задачки на одну и ту же тему, потом собрать их воедино
 //В этих задачках использовать технологии и темы, которые прошёл. События и дженерики интересуют
+
+
+// Прикрутить сохранение в файлы каждого 10го дня из 100, например. 
+// Прикрутить сериализацию в json и в xml

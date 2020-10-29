@@ -18,5 +18,10 @@ namespace Life
             Age = age;
             Cash = cash;
         }
+
+        public BasePerson()
+        {
+
+        }
     }
 }
