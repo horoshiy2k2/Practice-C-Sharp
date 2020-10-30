@@ -1,0 +1,1002 @@
+[
+  {
+    "Brand": "Ford",
+    "Model": "Escape",
+    "Year of creation": "2003-12-22T00:00:00",
+    "Mileage": "85000",
+    "Cost": 547000.0,
+    "AfterNYears": "2014-12-22T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 305000 в 2014 году"
+  },
+  {
+    "Brand": "Chevrolet",
+    "Model": "Silverado 2500",
+    "Year of creation": "2001-01-13T00:00:00",
+    "Mileage": "1000",
+    "Cost": 14000.0,
+    "AfterNYears": "2012-01-13T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 221000 в 2012 году"
+  },
+  {
+    "Brand": "Honda",
+    "Model": "Accord",
+    "Year of creation": "2007-11-08T00:00:00",
+    "Mileage": "125000",
+    "Cost": 813000.0,
+    "AfterNYears": "2018-11-08T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 345000 в 2018 году"
+  },
+  {
+    "Brand": "Volkswagen",
+    "Model": "Touareg",
+    "Year of creation": "1997-11-06T00:00:00",
+    "Mileage": "97000",
+    "Cost": 403000.0,
+    "AfterNYears": "2008-11-06T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 317000 в 2008 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "Econoline E350",
+    "Year of creation": "1993-06-24T00:00:00",
+    "Mileage": "4000",
+    "Cost": 11000.0,
+    "AfterNYears": "2004-06-24T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 224000 в 2004 году"
+  },
+  {
+    "Brand": "Maserati",
+    "Model": "GranTurismo",
+    "Year of creation": "2002-04-18T00:00:00",
+    "Mileage": "55000",
+    "Cost": 443000.0,
+    "AfterNYears": "2013-04-18T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 275000 в 2013 году"
+  },
+  {
+    "Brand": "Volkswagen",
+    "Model": "Cabriolet",
+    "Year of creation": "1991-10-15T00:00:00",
+    "Mileage": "54000",
+    "Cost": 790000.0,
+    "AfterNYears": "2002-10-15T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 274000 в 2002 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "F150",
+    "Year of creation": "1997-02-14T00:00:00",
+    "Mileage": "145000",
+    "Cost": 580000.0,
+    "AfterNYears": "2008-02-14T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 365000 в 2008 году"
+  },
+  {
+    "Brand": "Hyundai",
+    "Model": "Azera",
+    "Year of creation": "2007-03-11T00:00:00",
+    "Mileage": "186000",
+    "Cost": 597000.0,
+    "AfterNYears": "2018-03-11T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 406000 в 2018 году"
+  },
+  {
+    "Brand": "Chevrolet",
+    "Model": "Camaro",
+    "Year of creation": "2009-02-10T00:00:00",
+    "Mileage": "1000",
+    "Cost": 828000.0,
+    "AfterNYears": "2020-02-10T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 221000 в 2020 году"
+  },
+  {
+    "Brand": "Lexus",
+    "Model": "LX",
+    "Year of creation": "1990-12-20T00:00:00",
+    "Mileage": "58000",
+    "Cost": 504000.0,
+    "AfterNYears": "2001-12-20T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 278000 в 2001 году"
+  },
+  {
+    "Brand": "Toyota",
+    "Model": "Corolla",
+    "Year of creation": "2008-05-13T00:00:00",
+    "Mileage": "32000",
+    "Cost": 608000.0,
+    "AfterNYears": "2019-05-13T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 252000 в 2019 году"
+  },
+  {
+    "Brand": "GMC",
+    "Model": "Sierra 1500",
+    "Year of creation": "1991-09-04T00:00:00",
+    "Mileage": "31000",
+    "Cost": 892000.0,
+    "AfterNYears": "2002-09-04T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 251000 в 2002 году"
+  },
+  {
+    "Brand": "Porsche",
+    "Model": "911",
+    "Year of creation": "2002-09-18T00:00:00",
+    "Mileage": "59000",
+    "Cost": 596000.0,
+    "AfterNYears": "2013-09-18T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 279000 в 2013 году"
+  },
+  {
+    "Brand": "Mazda",
+    "Model": "Protege",
+    "Year of creation": "2007-02-17T00:00:00",
+    "Mileage": "31000",
+    "Cost": 789000.0,
+    "AfterNYears": "2018-02-17T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 251000 в 2018 году"
+  },
+  {
+    "Brand": "Scion",
+    "Model": "xD",
+    "Year of creation": "2009-07-25T00:00:00",
+    "Mileage": "170000",
+    "Cost": 862000.0,
+    "AfterNYears": "2020-07-25T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 390000 в 2020 году"
+  },
+  {
+    "Brand": "Chrysler",
+    "Model": "Concorde",
+    "Year of creation": "1993-11-24T00:00:00",
+    "Mileage": "150000",
+    "Cost": 355000.0,
+    "AfterNYears": "2004-11-24T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 370000 в 2004 году"
+  },
+  {
+    "Brand": "Lincoln",
+    "Model": "Navigator",
+    "Year of creation": "1998-12-09T00:00:00",
+    "Mileage": "47000",
+    "Cost": 905000.0,
+    "AfterNYears": "2009-12-09T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 267000 в 2009 году"
+  },
+  {
+    "Brand": "GMC",
+    "Model": "Savana",
+    "Year of creation": "2009-07-06T00:00:00",
+    "Mileage": "130000",
+    "Cost": 437000.0,
+    "AfterNYears": "2020-07-06T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 350000 в 2020 году"
+  },
+  {
+    "Brand": "Subaru",
+    "Model": "Legacy",
+    "Year of creation": "2009-10-16T00:00:00",
+    "Mileage": "212000",
+    "Cost": 214000.0,
+    "AfterNYears": "2020-10-16T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 432000 в 2020 году"
+  },
+  {
+    "Brand": "GMC",
+    "Model": "Yukon",
+    "Year of creation": "1995-04-23T00:00:00",
+    "Mileage": "183000",
+    "Cost": 370000.0,
+    "AfterNYears": "2006-04-23T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 403000 в 2006 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "Galaxie",
+    "Year of creation": "1994-08-15T00:00:00",
+    "Mileage": "28000",
+    "Cost": 617000.0,
+    "AfterNYears": "2005-08-15T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 248000 в 2005 году"
+  },
+  {
+    "Brand": "Cadillac",
+    "Model": "CTS",
+    "Year of creation": "1993-03-21T00:00:00",
+    "Mileage": "243000",
+    "Cost": 194000.0,
+    "AfterNYears": "2004-03-21T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 463000 в 2004 году"
+  },
+  {
+    "Brand": "Hyundai",
+    "Model": "Veracruz",
+    "Year of creation": "1992-04-05T00:00:00",
+    "Mileage": "42000",
+    "Cost": 718000.0,
+    "AfterNYears": "2003-04-05T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 262000 в 2003 году"
+  },
+  {
+    "Brand": "Mazda",
+    "Model": "Mazda6",
+    "Year of creation": "2000-12-14T00:00:00",
+    "Mileage": "12000",
+    "Cost": 356000.0,
+    "AfterNYears": "2011-12-14T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 232000 в 2011 году"
+  },
+  {
+    "Brand": "Oldsmobile",
+    "Model": "98",
+    "Year of creation": "1996-11-23T00:00:00",
+    "Mileage": "120000",
+    "Cost": 967000.0,
+    "AfterNYears": "2007-11-23T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 340000 в 2007 году"
+  },
+  {
+    "Brand": "Dodge",
+    "Model": "Neon",
+    "Year of creation": "1998-05-03T00:00:00",
+    "Mileage": "58000",
+    "Cost": 93000.0,
+    "AfterNYears": "2009-05-03T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 278000 в 2009 году"
+  },
+  {
+    "Brand": "Mercury",
+    "Model": "Cougar",
+    "Year of creation": "1991-01-27T00:00:00",
+    "Mileage": "229000",
+    "Cost": 899000.0,
+    "AfterNYears": "2002-01-27T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 449000 в 2002 году"
+  },
+  {
+    "Brand": "Volkswagen",
+    "Model": "Touareg",
+    "Year of creation": "2002-05-09T00:00:00",
+    "Mileage": "111000",
+    "Cost": 589000.0,
+    "AfterNYears": "2013-05-09T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 331000 в 2013 году"
+  },
+  {
+    "Brand": "Toyota",
+    "Model": "Celica",
+    "Year of creation": "2002-10-10T00:00:00",
+    "Mileage": "199000",
+    "Cost": 801000.0,
+    "AfterNYears": "2013-10-10T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 419000 в 2013 году"
+  },
+  {
+    "Brand": "Audi",
+    "Model": "Q5",
+    "Year of creation": "1996-02-01T00:00:00",
+    "Mileage": "36000",
+    "Cost": 824000.0,
+    "AfterNYears": "2007-02-01T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 256000 в 2007 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "Crown Victoria",
+    "Year of creation": "2001-02-07T00:00:00",
+    "Mileage": "59000",
+    "Cost": 110000.0,
+    "AfterNYears": "2012-02-07T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 279000 в 2012 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "Edge",
+    "Year of creation": "2006-04-20T00:00:00",
+    "Mileage": "243000",
+    "Cost": 377000.0,
+    "AfterNYears": "2017-04-20T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 463000 в 2017 году"
+  },
+  {
+    "Brand": "Dodge",
+    "Model": "Intrepid",
+    "Year of creation": "2003-09-10T00:00:00",
+    "Mileage": "137000",
+    "Cost": 857000.0,
+    "AfterNYears": "2014-09-10T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 357000 в 2014 году"
+  },
+  {
+    "Brand": "Toyota",
+    "Model": "Corolla",
+    "Year of creation": "2007-01-09T00:00:00",
+    "Mileage": "229000",
+    "Cost": 125000.0,
+    "AfterNYears": "2018-01-09T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 449000 в 2018 году"
+  },
+  {
+    "Brand": "Mazda",
+    "Model": "B-Series",
+    "Year of creation": "2004-05-21T00:00:00",
+    "Mileage": "137000",
+    "Cost": 584000.0,
+    "AfterNYears": "2015-05-21T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 357000 в 2015 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "Ranger",
+    "Year of creation": "1992-08-30T00:00:00",
+    "Mileage": "47000",
+    "Cost": 192000.0,
+    "AfterNYears": "2003-08-30T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 267000 в 2003 году"
+  },
+  {
+    "Brand": "Lincoln",
+    "Model": "MKX",
+    "Year of creation": "2006-02-22T00:00:00",
+    "Mileage": "240000",
+    "Cost": 575000.0,
+    "AfterNYears": "2017-02-22T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 460000 в 2017 году"
+  },
+  {
+    "Brand": "Porsche",
+    "Model": "911",
+    "Year of creation": "2010-03-24T00:00:00",
+    "Mileage": "110000",
+    "Cost": 47000.0,
+    "AfterNYears": "2021-03-24T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 330000 в 2021 году"
+  },
+  {
+    "Brand": "Mercedes-Benz",
+    "Model": "C-Class",
+    "Year of creation": "2002-02-18T00:00:00",
+    "Mileage": "85000",
+    "Cost": 216000.0,
+    "AfterNYears": "2013-02-18T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 305000 в 2013 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "Ranger",
+    "Year of creation": "2002-09-19T00:00:00",
+    "Mileage": "240000",
+    "Cost": 707000.0,
+    "AfterNYears": "2013-09-19T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 460000 в 2013 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "F150",
+    "Year of creation": "2001-08-24T00:00:00",
+    "Mileage": "194000",
+    "Cost": 650000.0,
+    "AfterNYears": "2012-08-24T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 414000 в 2012 году"
+  },
+  {
+    "Brand": "Nissan",
+    "Model": "Pathfinder",
+    "Year of creation": "1996-02-09T00:00:00",
+    "Mileage": "36000",
+    "Cost": 207000.0,
+    "AfterNYears": "2007-02-09T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 256000 в 2007 году"
+  },
+  {
+    "Brand": "Dodge",
+    "Model": "Caravan",
+    "Year of creation": "1991-08-25T00:00:00",
+    "Mileage": "122000",
+    "Cost": 71000.0,
+    "AfterNYears": "2002-08-25T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 342000 в 2002 году"
+  },
+  {
+    "Brand": "Jaguar",
+    "Model": "XJ Series",
+    "Year of creation": "1998-05-20T00:00:00",
+    "Mileage": "159000",
+    "Cost": 384000.0,
+    "AfterNYears": "2009-05-20T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 379000 в 2009 году"
+  },
+  {
+    "Brand": "Isuzu",
+    "Model": "VehiCROSS",
+    "Year of creation": "2006-08-02T00:00:00",
+    "Mileage": "20000",
+    "Cost": 106000.0,
+    "AfterNYears": "2017-08-02T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 240000 в 2017 году"
+  },
+  {
+    "Brand": "Chevrolet",
+    "Model": "Sportvan G30",
+    "Year of creation": "2002-06-08T00:00:00",
+    "Mileage": "64000",
+    "Cost": 158000.0,
+    "AfterNYears": "2013-06-08T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 284000 в 2013 году"
+  },
+  {
+    "Brand": "Lexus",
+    "Model": "LS",
+    "Year of creation": "1997-12-31T00:00:00",
+    "Mileage": "15000",
+    "Cost": 251000.0,
+    "AfterNYears": "2008-12-31T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 235000 в 2008 году"
+  },
+  {
+    "Brand": "Volkswagen",
+    "Model": "Passat",
+    "Year of creation": "1991-09-28T00:00:00",
+    "Mileage": "28000",
+    "Cost": 58000.0,
+    "AfterNYears": "2002-09-28T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 248000 в 2002 году"
+  },
+  {
+    "Brand": "Volkswagen",
+    "Model": "GTI",
+    "Year of creation": "1994-02-05T00:00:00",
+    "Mileage": "148000",
+    "Cost": 687000.0,
+    "AfterNYears": "2005-02-05T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 368000 в 2005 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "Mustang",
+    "Year of creation": "1998-02-22T00:00:00",
+    "Mileage": "202000",
+    "Cost": 748000.0,
+    "AfterNYears": "2009-02-22T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 422000 в 2009 году"
+  },
+  {
+    "Brand": "Honda",
+    "Model": "CR-X",
+    "Year of creation": "2008-12-16T00:00:00",
+    "Mileage": "19000",
+    "Cost": 580000.0,
+    "AfterNYears": "2019-12-16T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 239000 в 2019 году"
+  },
+  {
+    "Brand": "Toyota",
+    "Model": "MR2",
+    "Year of creation": "2002-09-09T00:00:00",
+    "Mileage": "11000",
+    "Cost": 749000.0,
+    "AfterNYears": "2013-09-09T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 231000 в 2013 году"
+  },
+  {
+    "Brand": "Chevrolet",
+    "Model": "APV",
+    "Year of creation": "2000-01-22T00:00:00",
+    "Mileage": "158000",
+    "Cost": 497000.0,
+    "AfterNYears": "2011-01-22T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 378000 в 2011 году"
+  },
+  {
+    "Brand": "Kia",
+    "Model": "Sportage",
+    "Year of creation": "2003-03-04T00:00:00",
+    "Mileage": "13000",
+    "Cost": 440000.0,
+    "AfterNYears": "2014-03-04T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 233000 в 2014 году"
+  },
+  {
+    "Brand": "Buick",
+    "Model": "Century",
+    "Year of creation": "1991-01-14T00:00:00",
+    "Mileage": "250000",
+    "Cost": 427000.0,
+    "AfterNYears": "2002-01-14T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 470000 в 2002 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "E-Series",
+    "Year of creation": "2003-03-18T00:00:00",
+    "Mileage": "16000",
+    "Cost": 399000.0,
+    "AfterNYears": "2014-03-18T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 236000 в 2014 году"
+  },
+  {
+    "Brand": "Lincoln",
+    "Model": "MKX",
+    "Year of creation": "2000-04-18T00:00:00",
+    "Mileage": "233000",
+    "Cost": 625000.0,
+    "AfterNYears": "2011-04-18T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 453000 в 2011 году"
+  },
+  {
+    "Brand": "Subaru",
+    "Model": "Impreza WRX",
+    "Year of creation": "1994-04-26T00:00:00",
+    "Mileage": "29000",
+    "Cost": 936000.0,
+    "AfterNYears": "2005-04-26T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 249000 в 2005 году"
+  },
+  {
+    "Brand": "BMW",
+    "Model": "745",
+    "Year of creation": "1999-11-19T00:00:00",
+    "Mileage": "105000",
+    "Cost": 230000.0,
+    "AfterNYears": "2010-11-19T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 325000 в 2010 году"
+  },
+  {
+    "Brand": "Pontiac",
+    "Model": "LeMans",
+    "Year of creation": "1993-04-01T00:00:00",
+    "Mileage": "51000",
+    "Cost": 818000.0,
+    "AfterNYears": "2004-04-01T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 271000 в 2004 году"
+  },
+  {
+    "Brand": "Mercedes-Benz",
+    "Model": "SL-Class",
+    "Year of creation": "2004-04-26T00:00:00",
+    "Mileage": "46000",
+    "Cost": 648000.0,
+    "AfterNYears": "2015-04-26T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 266000 в 2015 году"
+  },
+  {
+    "Brand": "Mitsubishi",
+    "Model": "Pajero",
+    "Year of creation": "1997-03-01T00:00:00",
+    "Mileage": "38000",
+    "Cost": 16000.0,
+    "AfterNYears": "2008-03-01T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 258000 в 2008 году"
+  },
+  {
+    "Brand": "Kia",
+    "Model": "Rio",
+    "Year of creation": "1992-01-21T00:00:00",
+    "Mileage": "119000",
+    "Cost": 449000.0,
+    "AfterNYears": "2003-01-21T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 339000 в 2003 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "Tempo",
+    "Year of creation": "1996-08-24T00:00:00",
+    "Mileage": "3000",
+    "Cost": 327000.0,
+    "AfterNYears": "2007-08-24T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 223000 в 2007 году"
+  },
+  {
+    "Brand": "Volkswagen",
+    "Model": "rio",
+    "Year of creation": "2007-02-18T00:00:00",
+    "Mileage": "87000",
+    "Cost": 53000.0,
+    "AfterNYears": "2018-02-18T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 307000 в 2018 году"
+  },
+  {
+    "Brand": "Mercury",
+    "Model": "Grand Marquis",
+    "Year of creation": "1994-12-06T00:00:00",
+    "Mileage": "30000",
+    "Cost": 843000.0,
+    "AfterNYears": "2005-12-06T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 250000 в 2005 году"
+  },
+  {
+    "Brand": "Chevrolet",
+    "Model": "Astro",
+    "Year of creation": "1993-10-13T00:00:00",
+    "Mileage": "162000",
+    "Cost": 453000.0,
+    "AfterNYears": "2004-10-13T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 382000 в 2004 году"
+  },
+  {
+    "Brand": "Chevrolet",
+    "Model": "Suburban 1500",
+    "Year of creation": "2010-10-20T00:00:00",
+    "Mileage": "44000",
+    "Cost": 521000.0,
+    "AfterNYears": "2021-10-20T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 264000 в 2021 году"
+  },
+  {
+    "Brand": "Buick",
+    "Model": "Estate",
+    "Year of creation": "2009-07-21T00:00:00",
+    "Mileage": "21000",
+    "Cost": 447000.0,
+    "AfterNYears": "2020-07-21T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 241000 в 2020 году"
+  },
+  {
+    "Brand": "Audi",
+    "Model": "A8",
+    "Year of creation": "1993-11-07T00:00:00",
+    "Mileage": "23000",
+    "Cost": 683000.0,
+    "AfterNYears": "2004-11-07T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 243000 в 2004 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "Probe",
+    "Year of creation": "2001-11-17T00:00:00",
+    "Mileage": "78000",
+    "Cost": 990000.0,
+    "AfterNYears": "2012-11-17T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 298000 в 2012 году"
+  },
+  {
+    "Brand": "Isuzu",
+    "Model": "Ascender",
+    "Year of creation": "1991-12-28T00:00:00",
+    "Mileage": "210000",
+    "Cost": 207000.0,
+    "AfterNYears": "2002-12-28T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 430000 в 2002 году"
+  },
+  {
+    "Brand": "Kia",
+    "Model": "Sorento",
+    "Year of creation": "2001-08-18T00:00:00",
+    "Mileage": "192000",
+    "Cost": 666000.0,
+    "AfterNYears": "2012-08-18T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 412000 в 2012 году"
+  },
+  {
+    "Brand": "Volkswagen",
+    "Model": "Touareg",
+    "Year of creation": "2008-04-19T00:00:00",
+    "Mileage": "228000",
+    "Cost": 843000.0,
+    "AfterNYears": "2019-04-19T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 448000 в 2019 году"
+  },
+  {
+    "Brand": "Plymouth",
+    "Model": "Acclaim",
+    "Year of creation": "2009-04-28T00:00:00",
+    "Mileage": "235000",
+    "Cost": 970000.0,
+    "AfterNYears": "2020-04-28T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 455000 в 2020 году"
+  },
+  {
+    "Brand": "Volvo",
+    "Model": "XC70",
+    "Year of creation": "1999-12-31T00:00:00",
+    "Mileage": "0",
+    "Cost": 339000.0,
+    "AfterNYears": "2010-12-31T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 220000 в 2010 году"
+  },
+  {
+    "Brand": "Chrysler",
+    "Model": "Sebring",
+    "Year of creation": "2008-02-29T00:00:00",
+    "Mileage": "114000",
+    "Cost": 279000.0,
+    "AfterNYears": "2019-02-28T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 334000 в 2019 году"
+  },
+  {
+    "Brand": "Porsche",
+    "Model": "911",
+    "Year of creation": "1999-09-20T00:00:00",
+    "Mileage": "80000",
+    "Cost": 596000.0,
+    "AfterNYears": "2010-09-20T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 300000 в 2010 году"
+  },
+  {
+    "Brand": "Mitsubishi",
+    "Model": "Outlander",
+    "Year of creation": "1991-09-15T00:00:00",
+    "Mileage": "109000",
+    "Cost": 102000.0,
+    "AfterNYears": "2002-09-15T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 329000 в 2002 году"
+  },
+  {
+    "Brand": "Mitsubishi",
+    "Model": "Diamante",
+    "Year of creation": "2007-04-10T00:00:00",
+    "Mileage": "111000",
+    "Cost": 327000.0,
+    "AfterNYears": "2018-04-10T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 331000 в 2018 году"
+  },
+  {
+    "Brand": "Hyundai",
+    "Model": "Elantra",
+    "Year of creation": "2005-01-02T00:00:00",
+    "Mileage": "87000",
+    "Cost": 809000.0,
+    "AfterNYears": "2016-01-02T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 307000 в 2016 году"
+  },
+  {
+    "Brand": "Hyundai",
+    "Model": "Entourage",
+    "Year of creation": "2000-09-26T00:00:00",
+    "Mileage": "56000",
+    "Cost": 905000.0,
+    "AfterNYears": "2011-09-26T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 276000 в 2011 году"
+  },
+  {
+    "Brand": "Maybach",
+    "Model": "Landaulet",
+    "Year of creation": "2001-11-08T00:00:00",
+    "Mileage": "68000",
+    "Cost": 281000.0,
+    "AfterNYears": "2012-11-08T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 288000 в 2012 году"
+  },
+  {
+    "Brand": "Toyota",
+    "Model": "Tundra",
+    "Year of creation": "2001-08-14T00:00:00",
+    "Mileage": "163000",
+    "Cost": 301000.0,
+    "AfterNYears": "2012-08-14T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 383000 в 2012 году"
+  },
+  {
+    "Brand": "Mazda",
+    "Model": "626",
+    "Year of creation": "1994-06-09T00:00:00",
+    "Mileage": "68000",
+    "Cost": 232000.0,
+    "AfterNYears": "2005-06-09T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 288000 в 2005 году"
+  },
+  {
+    "Brand": "Kia",
+    "Model": "Spectra",
+    "Year of creation": "2004-12-02T00:00:00",
+    "Mileage": "193000",
+    "Cost": 576000.0,
+    "AfterNYears": "2015-12-02T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 413000 в 2015 году"
+  },
+  {
+    "Brand": "BMW",
+    "Model": "3 Series",
+    "Year of creation": "2009-04-23T00:00:00",
+    "Mileage": "163000",
+    "Cost": 588000.0,
+    "AfterNYears": "2020-04-23T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 383000 в 2020 году"
+  },
+  {
+    "Brand": "Nissan",
+    "Model": "Altima",
+    "Year of creation": "1995-09-22T00:00:00",
+    "Mileage": "134000",
+    "Cost": 585000.0,
+    "AfterNYears": "2006-09-22T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 354000 в 2006 году"
+  },
+  {
+    "Brand": "Renault",
+    "Model": "Alliance",
+    "Year of creation": "1997-07-20T00:00:00",
+    "Mileage": "11000",
+    "Cost": 280000.0,
+    "AfterNYears": "2008-07-20T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 231000 в 2008 году"
+  },
+  {
+    "Brand": "Mercedes-Benz",
+    "Model": "G-Class",
+    "Year of creation": "1998-05-25T00:00:00",
+    "Mileage": "223000",
+    "Cost": 641000.0,
+    "AfterNYears": "2009-05-25T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 443000 в 2009 году"
+  },
+  {
+    "Brand": "BMW",
+    "Model": "3 Series",
+    "Year of creation": "1995-07-27T00:00:00",
+    "Mileage": "95000",
+    "Cost": 49000.0,
+    "AfterNYears": "2006-07-27T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 315000 в 2006 году"
+  },
+  {
+    "Brand": "Mercedes-Benz",
+    "Model": "C-Class",
+    "Year of creation": "1994-08-17T00:00:00",
+    "Mileage": "103000",
+    "Cost": 709000.0,
+    "AfterNYears": "2005-08-17T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 323000 в 2005 году"
+  },
+  {
+    "Brand": "GMC",
+    "Model": "Vandura 1500",
+    "Year of creation": "1995-08-01T00:00:00",
+    "Mileage": "202000",
+    "Cost": 788000.0,
+    "AfterNYears": "2006-08-01T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 422000 в 2006 году"
+  },
+  {
+    "Brand": "Ford",
+    "Model": "E150",
+    "Year of creation": "1996-03-08T00:00:00",
+    "Mileage": "236000",
+    "Cost": 214000.0,
+    "AfterNYears": "2007-03-08T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 456000 в 2007 году"
+  },
+  {
+    "Brand": "Pontiac",
+    "Model": "Sunbird",
+    "Year of creation": "2010-02-20T00:00:00",
+    "Mileage": "173000",
+    "Cost": 162000.0,
+    "AfterNYears": "2021-02-20T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 393000 в 2021 году"
+  },
+  {
+    "Brand": "Porsche",
+    "Model": "928",
+    "Year of creation": "1999-06-30T00:00:00",
+    "Mileage": "173000",
+    "Cost": 562000.0,
+    "AfterNYears": "2010-06-30T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 393000 в 2010 году"
+  },
+  {
+    "Brand": "Dodge",
+    "Model": "Dakota",
+    "Year of creation": "1999-05-01T00:00:00",
+    "Mileage": "26000",
+    "Cost": 632000.0,
+    "AfterNYears": "2010-05-01T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 246000 в 2010 году"
+  },
+  {
+    "Brand": "Mercedes-Benz",
+    "Model": "CLK-Class",
+    "Year of creation": "2001-04-15T00:00:00",
+    "Mileage": "221000",
+    "Cost": 381000.0,
+    "AfterNYears": "2012-04-15T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 441000 в 2012 году"
+  },
+  {
+    "Brand": "Cadillac",
+    "Model": "Brougham",
+    "Year of creation": "1993-10-12T00:00:00",
+    "Mileage": "47000",
+    "Cost": 343000.0,
+    "AfterNYears": "2004-10-12T00:00:00",
+    "CostAfterNYears": "Ваша машина утилизирована",
+    "MileageAfterNYears": "Ваша машина пробежала БЫ 267000 в 2004 году"
+  }
+]
