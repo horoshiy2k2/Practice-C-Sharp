@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Lesson20/1.0.0": {
+      "Homework11/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
-          "Lesson20.dll": {}
+          "Homework11.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -25,7 +25,7 @@
     }
   },
   "libraries": {
-    "Lesson20/1.0.0": {
+    "Homework11/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

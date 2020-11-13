@@ -2,19 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lesson20
+namespace Homework11
 {
     [Serializable]
-    public class Car
+    class Car
     {
-        public string CarMake { get; set; }
-        public string CarModel { get; set; }
-        public int CarModelYear { get; set; }
-        public string CarVin { get; set; }
+        public string Make { get; set; }
+        public string Model { get; set; }
+        public string ModelYear { get; set; }
+        public string Color { get; set; }
+        public int Cost { get; set; }
 
         public override string ToString()
         {
-            return $"{CarMake} {CarModel} {CarModelYear}";
+            return $"{Make}\tModel: {Model}\t{ModelYear}\t{Cost}$";
         }
     }
 }
