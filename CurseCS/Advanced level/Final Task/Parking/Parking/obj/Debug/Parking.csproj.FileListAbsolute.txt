@@ -1,0 +1,29 @@
+C:\Users\mashu\Desktop\IT Academy\C#_Base\My C# Углубленный\Финальный проект\Parking\Parking\obj\Debug\Parking.csproj.CoreCompileInputs.cache
+C:\Users\mashu\Desktop\IT Academy\C#_Base\My C# Углубленный\Финальный проект\Parking\Parking\bin\Debug\Parking.exe.config
+C:\Users\mashu\Desktop\IT Academy\C#_Base\My C# Углубленный\Финальный проект\Parking\Parking\bin\Debug\Parking.exe
+C:\Users\mashu\Desktop\IT Academy\C#_Base\My C# Углубленный\Финальный проект\Parking\Parking\bin\Debug\Parking.pdb
+C:\Users\mashu\Desktop\IT Academy\C#_Base\My C# Углубленный\Финальный проект\Parking\Parking\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mashu\Desktop\IT Academy\C#_Base\My C# Углубленный\Финальный проект\Parking\Parking\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mashu\Desktop\IT Academy\C#_Base\My C# Углубленный\Финальный проект\Parking\Parking\obj\Debug\Parking.csproj.CopyComplete
+C:\Users\mashu\Desktop\IT Academy\C#_Base\My C# Углубленный\Финальный проект\Parking\Parking\obj\Debug\Parking.exe
+C:\Users\mashu\Desktop\IT Academy\C#_Base\My C# Углубленный\Финальный проект\Parking\Parking\obj\Debug\Parking.pdb
+D:\Антон\Desktop\Шаблон-20201119T155233Z-001\Parking\Parking\bin\Debug\Parking.exe.config
+D:\Антон\Desktop\Шаблон-20201119T155233Z-001\Parking\Parking\bin\Debug\Parking.exe
+D:\Антон\Desktop\Шаблон-20201119T155233Z-001\Parking\Parking\bin\Debug\Parking.pdb
+D:\Антон\Desktop\Шаблон-20201119T155233Z-001\Parking\Parking\bin\Debug\Newtonsoft.Json.dll
+D:\Антон\Desktop\Шаблон-20201119T155233Z-001\Parking\Parking\bin\Debug\Newtonsoft.Json.xml
+D:\Антон\Desktop\Шаблон-20201119T155233Z-001\Parking\Parking\obj\Debug\Parking.csprojAssemblyReference.cache
+D:\Антон\Desktop\Шаблон-20201119T155233Z-001\Parking\Parking\obj\Debug\Parking.csproj.CoreCompileInputs.cache
+D:\Антон\Desktop\Шаблон-20201119T155233Z-001\Parking\Parking\obj\Debug\Parking.csproj.CopyComplete
+D:\Антон\Desktop\Шаблон-20201119T155233Z-001\Parking\Parking\obj\Debug\Parking.exe
+D:\Антон\Desktop\Шаблон-20201119T155233Z-001\Parking\Parking\obj\Debug\Parking.pdb
+D:\Антон\Desktop\Proga\С#\!!ТАСК (до воскресенья вечер)\Шаблон-20201119T155233Z-001\Parking\Parking\bin\Debug\Parking.exe.config
+D:\Антон\Desktop\Proga\С#\!!ТАСК (до воскресенья вечер)\Шаблон-20201119T155233Z-001\Parking\Parking\bin\Debug\Parking.exe
+D:\Антон\Desktop\Proga\С#\!!ТАСК (до воскресенья вечер)\Шаблон-20201119T155233Z-001\Parking\Parking\bin\Debug\Parking.pdb
+D:\Антон\Desktop\Proga\С#\!!ТАСК (до воскресенья вечер)\Шаблон-20201119T155233Z-001\Parking\Parking\bin\Debug\Newtonsoft.Json.dll
+D:\Антон\Desktop\Proga\С#\!!ТАСК (до воскресенья вечер)\Шаблон-20201119T155233Z-001\Parking\Parking\bin\Debug\Newtonsoft.Json.xml
+D:\Антон\Desktop\Proga\С#\!!ТАСК (до воскресенья вечер)\Шаблон-20201119T155233Z-001\Parking\Parking\obj\Debug\Parking.csprojAssemblyReference.cache
+D:\Антон\Desktop\Proga\С#\!!ТАСК (до воскресенья вечер)\Шаблон-20201119T155233Z-001\Parking\Parking\obj\Debug\Parking.csproj.CoreCompileInputs.cache
+D:\Антон\Desktop\Proga\С#\!!ТАСК (до воскресенья вечер)\Шаблон-20201119T155233Z-001\Parking\Parking\obj\Debug\Parking.csproj.CopyComplete
+D:\Антон\Desktop\Proga\С#\!!ТАСК (до воскресенья вечер)\Шаблон-20201119T155233Z-001\Parking\Parking\obj\Debug\Parking.exe
+D:\Антон\Desktop\Proga\С#\!!ТАСК (до воскресенья вечер)\Шаблон-20201119T155233Z-001\Parking\Parking\obj\Debug\Parking.pdb
