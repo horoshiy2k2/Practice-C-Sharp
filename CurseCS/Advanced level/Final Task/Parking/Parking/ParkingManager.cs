@@ -25,7 +25,6 @@ namespace Parking
             _parking.Remove(removedCar);
         }
 
-        // remove??
         public void SerializeCarsInParking()
         {
             Helper.SerializeJson<ParkedCar>(AppSettings.CarsInParkingPath, _parking.CarsInParking);
@@ -42,6 +41,11 @@ namespace Parking
             }
 
             return passedCars[0];
+        }
+
+        public int GetCountFreeCarPlaces()
+        {
+            return _parking.FreeCarPlaces;
         }
 
         public static void Pay(Client client, double amount)

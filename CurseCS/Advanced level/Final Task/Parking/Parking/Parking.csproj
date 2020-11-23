@@ -47,7 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DailyReport.cs" />
+    <Compile Include="DailyReportFolder\ReportDay.cs" />
+    <Compile Include="DailyReportFolder\LeftCar.cs" />
+    <Compile Include="DailyReportFolder\PaidClent.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Models\Car.cs" />
     <Compile Include="Models\Client.cs" />
@@ -56,6 +58,7 @@
     <Compile Include="Notifications\EmailNotification.cs" />
     <Compile Include="Notifications\INotification.cs" />
     <Compile Include="Notifications\SmsNotification.cs" />
+    <Compile Include="DailyReportFolder\LeavedCar.cs" />
     <Compile Include="ParkingManager.cs" />
     <Compile Include="ParkingPlace.cs" />
     <Compile Include="Payment\CardPayment.cs" />

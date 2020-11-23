@@ -24,6 +24,16 @@ namespace Parking.Payment
                 else
                 {
                     Console.WriteLine($"Вы успешно оплатили {amount:f2}$ картой {client.PaymentInfo.CreditCardType} {client.PaymentInfo.CreditCardNumber}\nХорошего дня, {client.FirstName}!");
+                
+                    ReportDay.PaidClents.Add(new DailyReport.PaidClent() 
+                    {
+                        PaymentMethod = "card", 
+                        Amount = amount, 
+                        FirstName = client.FirstName,
+                        LastName = client.LastName,
+                        Email = client.Email,
+                        Phone = client.Phone
+                    });
                 }
             }
             else

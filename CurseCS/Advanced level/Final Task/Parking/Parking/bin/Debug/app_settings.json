@@ -1,7 +1,7 @@
 {
-  "TotalCarPlaces": 12,
+  "TotalCarPlaces": 6,
   "FreePeriodInSeconds": 10,
-  "DailyReportPeriodInSeconds": 60,
+  "DailyReportPeriodInSeconds": 30,
   "PricePerSeconds": 2,
   "SendEndFreePeriodEmailNotifications": true,
   "SendEndFreePeriodSmsNotifications": true

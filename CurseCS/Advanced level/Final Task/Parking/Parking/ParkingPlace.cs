@@ -23,8 +23,6 @@ namespace Parking
             TotalCarPlaces = AppSettings.TotalCarPlaces;
         }
 
-        
-
         public int TotalCarPlaces { get; }
 
         public List<ParkedCar> CarsInParking => _carsInParking;
@@ -38,17 +36,31 @@ namespace Parking
             _carsInParking.Add(parkedCar);
             parkedCar.Id = GetFreeID();
             parkedCar.InitialParkingTime = DateTime.Now;
+
+            ReportDay.CarsPerDay.Add(parkedCar);
         }
 
         public void Remove(ParkedCar removedCar)
         {
+            if (removedCar == null)
+            {
+                return;
+            }
+
             _carsInParking.Remove(removedCar);
+
             var totalSecondsInParking = (DateTime.Now - removedCar.InitialParkingTime).Value.TotalSeconds;
+
+            var paidCar = new LeavedCar()
+            {
+                Client = removedCar.Client,
+                TotalSecondsInParking = totalSecondsInParking
+            };
 
             if (totalSecondsInParking > AppSettings.FreePeriodInSeconds)
             {
                 var amount = AppSettings.PricePerSeconds * (totalSecondsInParking - AppSettings.FreePeriodInSeconds);
-
+ 
                 Console.WriteLine($"{removedCar.Client.FirstName}, Вы пробыли на парковке {totalSecondsInParking:f0} секунд. Ваш счёт: {amount:f2}$");
                 
                 ParkingManager.Pay(removedCar.Client, amount);
@@ -56,14 +68,14 @@ namespace Parking
             else
             {
                 Console.WriteLine($"Вы успели уехать в бесплатный период. Хорошего дня, {removedCar.Client.FirstName}!");
-
-                //добавить машинку в отчёт как уехавшую. А надо же ещё и приехавших.
             }
+
+            ReportDay.LeavedCars.Add(paidCar);
+
         }
 
         public void Dispose()
         {
-            //Тут делается то, что нужно, когда сворачиваемся и закрываем прогу, q нажимаем мб
             throw new NotImplementedException();
         }
 

@@ -8,9 +8,9 @@ using System.Threading;
 
 namespace Parking
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             AppSettings.Initialize();
 
@@ -23,6 +23,10 @@ namespace Parking
             {
                 parkedCarsDB = JsonConvert.DeserializeObject<List<ParkedCar>>(sr.ReadToEnd());
             }
+
+            var periodTimeSpanDailyReport = DateTime.Now.AddSeconds(AppSettings.DailyReportPeriodInSeconds) - DateTime.Now;
+            var printDailyReportTimerCallback = new TimerCallback(ReportDay.PrintDailyReport);
+            var timerDailyReport = new Timer(printDailyReportTimerCallback, parking.CarsInParking, periodTimeSpanDailyReport, Timeout.InfiniteTimeSpan);
 
             bool notLeaveProgram = true;
             do
@@ -39,14 +43,9 @@ namespace Parking
                 switch (command)
                 {
                     case "add":
-                        // Ещё реализовать "заполненность" парковки. Чтобы не вмещала.
                         var parkedCar = parkedCarsDB[random.Next(0, parkedCarsDB.Count)];
 
                         AddCarToParking(parkedCar, parkingManager);
-
-                        Console.Clear();
-
-                        Console.WriteLine($"На парковку заехала машина: {parkedCar}");
                         break;
 
                     case "remove":
@@ -87,11 +86,23 @@ namespace Parking
 
         private static void AddCarToParking(ParkedCar parkedCar, ParkingManager parkingManager)
         {
+            if(parkingManager.GetCountFreeCarPlaces() <= 0)
+            {
+                Console.Clear();
+                Console.WriteLine($"К сожалению, все места на парковке заняты, {parkedCar.Client.FirstName} уезжает на своей {parkedCar.Car.Make} на другую парковку");
+                return;
+            }
+
             var timerStartTimeSpan = DateTime.Now.AddSeconds(AppSettings.FreePeriodInSeconds) - DateTime.Now;
             var notify = new TimerCallback(Notify);
             var timer = new Timer(notify, parkedCar.Client, timerStartTimeSpan, Timeout.InfiniteTimeSpan);
 
             parkingManager.Add(parkedCar);
+
+            Console.Clear();
+
+            Console.WriteLine($"На парковку заехала машина: {parkedCar}");
+
         }
 
         public static void Notify(object obj)
@@ -110,9 +121,6 @@ namespace Parking
 
         public static ParkingPlace GetParkingPlace()
         {
-            // Когда создаём репорт по таймеру или по Quit (скорее всего этот случай), тогда сохраняем в какой-то путь файл с текущей парковкой.
-            // Иначе создаём парковку новую
-
             if (!File.Exists(AppSettings.CarsInParkingPath))
             {
                 return new ParkingPlace();

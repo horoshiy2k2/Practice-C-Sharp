@@ -22,6 +22,8 @@ namespace Parking.Settings
 
         public static string AppSettingsPath => "app_settings.json"; 
 
+        public static string DailyReportPath => "daily_report.txt"; 
+
         public static bool SendEndFreePeriodEmailNotifications { get; set; }
 
         public static bool SendEndFreePeriodSmsNotifications { get; set; }
